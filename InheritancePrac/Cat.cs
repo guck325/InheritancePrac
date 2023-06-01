@@ -5,7 +5,7 @@ namespace InheritancePrac
     /// <summary>
     /// 고양이 클래스
     /// </summary>
-    public class Cat : Animal
+    public abstract class Cat : Animal
     {
         public Cat()
         {
