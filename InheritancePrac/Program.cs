@@ -15,6 +15,7 @@ namespace InheritancePrac
             dog.Public();
             //dog.Protected();
             //dog.Privvate();
+
             List<Animal> Animals = new List<Animal>() { new Dog(), new Dog(), new Dog(), new Cat(), new Cat(), new Cat() };
 
            // List<Dog> Dogs = new List<Dog>() { new Dog(), new Dog(), new Dog() };
@@ -24,18 +25,13 @@ namespace InheritancePrac
             //List<Object> Things = new List<Object>() { new Dog(), new Dog(), new Dog(), new Dog(), new Dog(), new Dog() };  이런식으로 가능
 
 
-            foreach ( var item in Dogs )
+            foreach ( var item in Animals )
             {
                 item.Eat();
                 item.Sleep();
-                item.Bark();
+                ((Dog)item).Bark();
             }
-            foreach ( var item in Cats )
-            {
-                item.Eat();
-                item.Sleep();
-                item.Meow();
-            }
+            
         }
     }
 }
