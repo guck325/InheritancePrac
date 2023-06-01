@@ -6,6 +6,10 @@ namespace InheritancePrac
     {
         public string Color { get; set; }
 
+        public void Eat()
+        {
+            Console.WriteLine("허겁지겁 먹습니다");
+        }
 
 
         public void Bark()

@@ -14,6 +14,10 @@ namespace InheritancePrac
         public Cat(int age) : base(age)
         {
         }
+        public override void Eat()
+        {
+            Console.WriteLine("자박자박 먹습니다");
+        }
 
         public void Meow()
         {
